@@ -20,7 +20,7 @@ class Register extends React.Component{
   }
 
   onSubmitSignIn = (event) => {
-    fetch('https://mybackend-1cn5.onrender.com/register', {
+    fetch('http://localhost:3000/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
